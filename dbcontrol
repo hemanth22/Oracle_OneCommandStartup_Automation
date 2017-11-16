@@ -1,7 +1,7 @@
 #!/bin/bash
 if [[ $1 != 'stop' ]]
 then
-dbctrl start 2>&1> /home/bhemanth/oradbctl/logs/stderrstart_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
+dbctrl start 2>&1> /home/user/oradbctl/logs/stderrstart_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
 else
-dbctrl stop 2>&1> /home/bhemanth/oradbctl/logs/stderrstop_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
+dbctrl stop 2>&1> /home/user/oradbctl/logs/stderrstop_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
 fi

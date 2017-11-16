@@ -2,7 +2,7 @@
 if [[ $1 != 'stop' ]]
 then
 dbinit(){
-login='sys/Hemanth22 as sysdba'
+login='sys/[password] as sysdba'
 sqlplus $login <<EOF
 @dbinit.sql
 exit;
@@ -11,7 +11,7 @@ EOF
 dbinit
 else
 dbim(){
-login='sys/Hemanth22 as sysdba'
+login='sys/[password] as sysdba'
 sqlplus $login <<EOF
 @dbim.sql
 exit;
@@ -23,14 +23,14 @@ unset dbim
 fi
 
 #dbinit(){
-#login='sys/Hemanth22 as sysdba'
+#login='sys/[password] as sysdba'
 #sqlplus $login <<EOF
 #@dbinit.sql
 #exit;
 #EOF
 #}
 #dbim(){
-#login='sys/Hemanth22 as sysdba'
+#login='sys/[password] as sysdba'
 #sqlplus $login <<EOF
 #@dbim.sql
 #exit;
