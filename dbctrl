@@ -1,0 +1,38 @@
+#!/bin/bash
+if [[ $1 != 'stop' ]]
+then
+dbinit(){
+login='sys/Hemanth22 as sysdba'
+sqlplus $login <<EOF
+@dbinit.sql
+exit;
+EOF
+}
+dbinit
+else
+dbim(){
+login='sys/Hemanth22 as sysdba'
+sqlplus $login <<EOF
+@dbim.sql
+exit;
+EOF
+}
+dbim
+unset dbinit
+unset dbim
+fi
+
+#dbinit(){
+#login='sys/Hemanth22 as sysdba'
+#sqlplus $login <<EOF
+#@dbinit.sql
+#exit;
+#EOF
+#}
+#dbim(){
+#login='sys/Hemanth22 as sysdba'
+#sqlplus $login <<EOF
+#@dbim.sql
+#exit;
+#EOF
+#}
