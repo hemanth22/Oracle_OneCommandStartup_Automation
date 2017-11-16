@@ -1,21 +1,25 @@
 #!/bin/bash
 if [[ $1 != 'stop' ]]
 then
+  cd /home/user/oradbctl
 dbinit(){
 login='sys/[password] as sysdba'
 sqlplus $login <<EOF
 @dbinit.sql
 exit;
 EOF
+cd -
 }
 dbinit
 else
+  cd /home/user/oradbctl
 dbim(){
 login='sys/[password] as sysdba'
 sqlplus $login <<EOF
 @dbim.sql
 exit;
 EOF
+cd -
 }
 dbim
 unset dbinit

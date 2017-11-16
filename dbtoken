@@ -1,0 +1,24 @@
+#!/bin/bash
+if [[ $1 != 'down' ]]
+then
+  cd /home/user/oradbctl
+tup(){
+login='sys/[password] as sysdba'
+sqlplus $login <<EOF
+@exit.sql
+EOF
+ cd /home/user/Desktop
+touch db_up.dat
+cd -
+}
+tup
+else
+cd /home/user/Desktop
+tdown(){
+touch db_down.dat
+cd -
+}
+tdown
+unset tup
+unset tdown
+fi

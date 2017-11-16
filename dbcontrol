@@ -2,6 +2,12 @@
 if [[ $1 != 'stop' ]]
 then
 dbctrl start 2>&1> /home/user/oradbctl/logs/stderrstart_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
+cd /home/user/oradbctl
+dbtoken up 2>&1> /home/user/oradbctl/logs/tknup_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
+cd -
 else
 dbctrl stop 2>&1> /home/user/oradbctl/logs/stderrstop_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
+cd /home/user/oradbctl
+dbtoken down 2>&1> /home/user/oradbctl/logs/tkndwn_`date +\%Y\-\%m\-\%d\_\%H\:\%M\:\%S`.log
+cd -
 fi
