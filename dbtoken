@@ -1,19 +1,19 @@
 #!/bin/bash
 if [[ $1 != 'down' ]]
 then
-  cd /home/user/oradbctl
+  cd /home/bhemanth/oradbctl
 tup(){
-login='sys/[password] as sysdba'
+login='sys/Hemanth22 as sysdba'
 sqlplus $login <<EOF
 @exit.sql
 EOF
- cd /home/user/Desktop
+ cd /home/bhemanth/Desktop
 touch db_up.dat
 cd -
 }
 tup
 else
-cd /home/user/Desktop
+cd /home/bhemanth/Desktop
 tdown(){
 touch db_down.dat
 cd -

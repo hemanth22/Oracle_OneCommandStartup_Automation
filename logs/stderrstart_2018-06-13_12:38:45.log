@@ -1,0 +1,82 @@
+===========================================================
+Starting Services
+===========================================================
+
+LSNRCTL for Linux: Version 12.2.0.1.0 - Production on 13-JUN-2018 12:38:45
+
+Copyright (c) 1991, 2016, Oracle.  All rights reserved.
+
+Starting /home/bhemanth/app/bhemanth/product/12.2.0/dbhome_1/bin/tnslsnr: please wait...
+
+TNSLSNR for Linux: Version 12.2.0.1.0 - Production
+System parameter file is /home/bhemanth/app/bhemanth/product/12.2.0/dbhome_1/network/admin/listener.ora
+Log messages written to /home/bhemanth/app/bhemanth/diag/tnslsnr/localhost/listener/alert/log.xml
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1521)))
+
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))
+STATUS of the LISTENER
+------------------------
+Alias                     LISTENER
+Version                   TNSLSNR for Linux: Version 12.2.0.1.0 - Production
+Start Date                13-JUN-2018 12:38:45
+Uptime                    0 days 0 hr. 0 min. 0 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /home/bhemanth/app/bhemanth/product/12.2.0/dbhome_1/network/admin/listener.ora
+Listener Log File         /home/bhemanth/app/bhemanth/diag/tnslsnr/localhost/listener/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1521)))
+The listener supports no services
+The command completed successfully
+===========================================================
+Services status
+===========================================================
+
+LSNRCTL for Linux: Version 12.2.0.1.0 - Production on 13-JUN-2018 12:38:45
+
+Copyright (c) 1991, 2016, Oracle.  All rights reserved.
+
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))
+STATUS of the LISTENER
+------------------------
+Alias                     LISTENER
+Version                   TNSLSNR for Linux: Version 12.2.0.1.0 - Production
+Start Date                13-JUN-2018 12:38:45
+Uptime                    0 days 0 hr. 0 min. 0 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /home/bhemanth/app/bhemanth/product/12.2.0/dbhome_1/network/admin/listener.ora
+Listener Log File         /home/bhemanth/app/bhemanth/diag/tnslsnr/localhost/listener/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1521)))
+The listener supports no services
+The command completed successfully
+============================================================
+Logging to Database
+============================================================
+
+SQL*Plus: Release 12.2.0.1.0 Production on Wed Jun 13 12:38:45 2018
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> ORACLE instance started.
+
+Total System Global Area 3707764736 bytes
+Fixed Size		    8799320 bytes
+Variable Size		  855641000 bytes
+Database Buffers	 2835349504 bytes
+Redo Buffers		    7974912 bytes
+Database mounted.
+Database opened.
+SQL> Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+/home/bhemanth
+=============================================================
+Database started
+=============================================================

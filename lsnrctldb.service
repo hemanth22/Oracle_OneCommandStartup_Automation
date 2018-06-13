@@ -1,0 +1,13 @@
+[Unit]
+Description=oracle net listener
+After=network.target
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/sysconfig/oracledbms
+ExecStart=/home/bhemanth/app/bhemanth/product/12.1.0/dbhome_1/bin/lsnrctl start
+ExecStop=/home/bhemanth/app/bhemanth/product/12.1.0/dbhome_1/bin/lsnrctl stop
+User=bhemanth
+
+[Install]
+WantedBy=multi-user.target

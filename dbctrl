@@ -1,40 +1,68 @@
 #!/bin/bash
 if [[ $1 != 'stop' ]]
 then
-  cd /home/user/oradbctl
+  cd /home/bhemanth/oradbctl
 dbinit(){
-login='sys/[password] as sysdba'
+echo "==========================================================="
+echo "Starting Services"
+echo "==========================================================="
+lsnrctl start
+echo "==========================================================="
+echo "Services status"
+echo "==========================================================="
+lsnrctl status
+echo "============================================================"
+echo "Logging to Database"
+echo "============================================================"
+login='sys/Hemanth22 as sysdba'
 sqlplus $login <<EOF
 @dbinit.sql
 exit;
 EOF
 cd -
+echo "============================================================="
+echo "Database started"
+echo "============================================================="
 }
 dbinit
 else
-  cd /home/user/oradbctl
+  cd /home/bhemanth/oradbctl
 dbim(){
-login='sys/[password] as sysdba'
+login='sys/Hemanth22 as sysdba'
 sqlplus $login <<EOF
 @dbim.sql
 exit;
 EOF
+echo "================================================================="
+echo "Database Stoppped"
+echo "================================================================="
 cd -
+echo "================================================================="
+echo "Stopping Services"
+echo "================================================================="
+lsnrctl stop
+echo "================================================================="
+echo "Service down Status"
+echo "================================================================="
+lsnrctl status
 }
 dbim
+echo "=================================================================="
+echo "Disable Environments"
+echo "=================================================================="
 unset dbinit
 unset dbim
 fi
 
 #dbinit(){
-#login='sys/[password] as sysdba'
+#login='sys/Hemanth22 as sysdba'
 #sqlplus $login <<EOF
 #@dbinit.sql
 #exit;
 #EOF
 #}
 #dbim(){
-#login='sys/[password] as sysdba'
+#login='sys/Hemanth22 as sysdba'
 #sqlplus $login <<EOF
 #@dbim.sql
 #exit;

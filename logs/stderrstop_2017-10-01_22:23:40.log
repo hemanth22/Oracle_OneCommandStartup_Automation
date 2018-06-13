@@ -1,0 +1,19 @@
+
+SQL*Plus: Release 12.1.0.2.0 Production on Sun Oct 1 22:23:40 2017
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> ERROR:
+ORA-01034: ORACLE not available
+ORA-27101: shared memory realm does not exist
+Linux-x86_64 Error: 2: No such file or directory
+Additional information: 3640
+Additional information: -711933897
+Process ID: 0
+Session ID: 0 Serial number: 0
+
+
+SQL> Disconnected
+/home/bhemanth/Desktop

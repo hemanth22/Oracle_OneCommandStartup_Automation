@@ -1,0 +1,11 @@
+
+SQL*Plus: Release 12.2.0.1.0 Production on Wed Jun 13 12:29:09 2018
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+SQL> Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+/home/bhemanth/oradbctl

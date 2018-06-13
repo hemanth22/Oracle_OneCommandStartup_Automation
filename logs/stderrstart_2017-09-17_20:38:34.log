@@ -1,0 +1,19 @@
+
+SQL*Plus: Release 12.1.0.2.0 Production on Sun Sep 17 20:38:35 2017
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> ORACLE instance started.
+
+Total System Global Area 3707764736 bytes
+Fixed Size		    2930944 bytes
+Variable Size		  855639808 bytes
+Database Buffers	 2835349504 bytes
+Redo Buffers		   13844480 bytes
+Database mounted.
+Database opened.
+SQL> Disconnected from Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+/home/bhemanth
