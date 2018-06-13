@@ -48,7 +48,7 @@ lsnrctl status
 }
 dbim
 echo "=================================================================="
-echo "Disable Environments"
+echo "Environments Disabled"
 echo "=================================================================="
 unset dbinit
 unset dbim
